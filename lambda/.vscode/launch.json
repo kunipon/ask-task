@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha All",
+            "program": "${workspaceFolder}/custom/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--timeout",
+                "10000",
+                "--colors",
+                "${workspaceFolder}/test/*/test-*"
+            ],
+            "env": {
+                "API_PROTO": "http",
+                "API_HOST": "localhost:8080"
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Mocha Curreent File",
+            "program": "${workspaceFolder}/custom/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--timeout",
+                "10000",
+                "--colors",
+                "${file}"
+            ],
+            "env": {
+                "API_PROTO": "http",
+                "API_HOST": "localhost:8080"
+            },
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        }
+    ]
+}

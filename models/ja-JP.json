@@ -1,0 +1,164 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "タスクスケジューラー",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SelectRegistIntent",
+                    "slots": [],
+                    "samples": [
+                        "登録お願い",
+                        "登録して",
+                        "登録"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TaskRegistIntent",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "title",
+                            "type": "TASK_Title"
+                        }
+                    ],
+                    "samples": [
+                        " {title} を {date} までにやる",
+                        " {date} までに {title} "
+                    ]
+                },
+                {
+                    "name": "SelectConfirmIntent",
+                    "slots": [],
+                    "samples": [
+                        "確認する",
+                        "確認"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "いいえ"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "TASK_Action",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "登録"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "確認"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TASK_Title",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "かくかくしかじか"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "覚書"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "多様な国際パリティ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "州の古い郵便"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "削除されたホワイトサマリー"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "先頭に四角いエキス"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "過剰な背景の好意"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "小さな時間を実施"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "コメントアドバイスを受ける"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "二重明日の完璧をリリース"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "サスペンド"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "商業的に定義する"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "滞在の権利"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
